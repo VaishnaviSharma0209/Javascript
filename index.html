@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <title>C-78</title>
+    </head>
+    <body> 
+        <p>
+        How to declare the arrays ? 
+        <h4 id="declaration_of_arrays"> 
+        </h4>
+    </p>
+     <hr>
+     <p>
+        How to fetch the first element of the array ?
+        <h4 id="access_first_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the second element of the array ?
+        <h4 id="access_second_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the third element of the array ?
+        <h4 id="access_third_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to get the length of the array ?
+        <h4 id="display_length_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to loop the array array ?
+        <h4 id="loop_the_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add element at the end of the array ?
+        <h4 id="add_element_at_the_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add more element at the end of the array ?
+        <h4 id="add_more_element_at_the_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to declare the arrays with alphabets ? 
+        <h4 id="display_alphabets_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to sort the arrays with alphabets ? 
+        <h4 id="display_sorted_alphabets_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to reverse the arrays with alphabets ? 
+        <h4 id="display_reverse_array"> 
+        </h4>
+    </p>
+<hr>      
+    <p>
+        How to declare the arrays with numbers ? 
+        <h4 id="display_number_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to find the maximum number from the arrays ? 
+        <h4 id="display_maximum_number"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to find the minimum number from the arrays ? 
+        <h4 id="display_minimum_number"> 
+        </h4>
+    </p>
+
+    <h3 style="background-color: red; font-size: 23px;">
+        ADDITIONAL ACTIVITY
+    </h3>
+    <p>
+        How to add element at the start of the array ? Hint use unshift method
+        <h4 id="add_element_at_the_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add more element at the start of the array ? Hint use unshift method
+        <h4 id="add_more_element_at_the_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to remove element from the start of the array ? Hint use shift method
+        <h4 id="remove_element_from_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to remove element from the end of the array ? Hint use pop method
+        <h4 id="remove_element_from_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to merge two arrays ? Hint define two arrays and then use concat method for eg - array1.concat(array2)
+        <h4 id="merge_two_arrays"> 
+        </h4>
+        </p>
+    </body>
+    <script>
+        //create array fruits
+        var fruits=["Apple", "Mango", "Orange"];
+        console.log(fruits);
+        document.getElementById("declaration_of_arrays").innerHTML=fruits;
+        //access array 1st fruit
+        var fruit1=fruits[0];
+        console.log(fruit1);
+        document.getElementById("access_first_element").innerHTML=fruit1;
+         //access array 2nd fruit
+         var fruit2=fruits[1];
+        console.log(fruit2);
+        document.getElementById("access_second_element").innerHTML=fruit2;
+         //access array 3rd fruit
+         var fruit3=fruits[2];
+        console.log(fruit3);
+        document.getElementById("access_third_element").innerHTML=fruit3;
+        //access array length fruit
+        var fruitlen=fruits.length;
+        console.log(fruitlen);
+        document.getElementById("display_length_of_array").innerHTML=fruitlen;
+        //access array loop fruit
+        var loop="";
+        for(i=0;i<fruits.length;i++)
+        {
+            loop=loop+fruits[i]+"<br>"
+        }
+        console.log(loop);
+        document.getElementById("loop_the_array").innerHTML=loop;
+        //add fruit 1
+         fruits.push("Strawberry");
+        console.log(fruits);
+         document.getElementById("add_element_at_the_end_of_array").innerHTML=fruits;
+         fruits.push("Banana");
+        console.log(fruits);
+         document.getElementById("add_more_element_at_the_end_of_array").innerHTML=fruits;
+         var alphabet=["l" ,"a" , "e" , "j" , "b" , "g" , "f" , "h" , "c" , "d" , "i" , "k"];
+         console.log(alphabet);
+         document.getElementById("display_alphabets_array").innerHTML=alphabet;
+          alphabet.sort();
+         console.log(alphabet);
+         document.getElementById("display_sorted_alphabets_array").innerHTML=alphabet;
+         alphabet.reverse();
+         console.log(alphabet);
+         document.getElementById("display_reverse_array").innerHTML=alphabet;
+         var number=["12" ,"3" , "42" , "59" , "97" , "34" , "60" , "22" , "9" , "86" , "53" , "90"];
+         console.log(number);
+         document.getElementById("display_number_array").innerHTML=number;
+         var numbermax=Math.max.apply(Math,number);
+         console.log(numbermax);
+         document.getElementById("display_maximum_number").innerHTML=numbermax;
+         var numbermin=Math.min.apply(Math,number);
+         console.log(numbermin);
+         document.getElementById("display_minimum_number").innerHTML=numbermin;
+         fruits.unshift("Cherry");
+        console.log(fruits);
+         document.getElementById("add_element_at_the_start_of_array").innerHTML=fruits;
+         fruits.unshift("Pine Apple");
+        console.log(fruits);
+         document.getElementById("add_more_element_at_the_start_of_array").innerHTML=fruits;
+         fruits.shift("Pine Apple");
+        console.log(fruits);
+         document.getElementById("remove_element_from_start_of_array").innerHTML=fruits;
+         fruits.pop("Banana");
+        console.log(fruits);
+         document.getElementById("remove_element_from_end_of_array").innerHTML=fruits;
+         var country1=["Russia","India","USA"];
+         var country2=["Japan","UAE","England"];
+         var join=country1.concat(country2);
+         console.log(join);
+         document.getElementById("merge_two_arrays").innerHTML=join;
+    </script>
+</html>
+   
